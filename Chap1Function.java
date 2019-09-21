@@ -44,8 +44,10 @@ public class Chap1Function {
             if (number == 1) {
             } else if (isEven) {
                 number = number / 2;
-            } else {
+            } else if (!isEven) {
                 number = (number * 3) + 1;
+            } else {
+                System.out.println("Invalid Input");
             }
             outputs.add(number);
         }while(number != 1);
