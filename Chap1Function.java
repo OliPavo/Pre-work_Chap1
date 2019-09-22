@@ -41,16 +41,14 @@ public class Chap1Function {
                 isEven = false;
             }
             // Evaluates integer and returns number for output
-            if (number == 1) {
+            if (number <= 1) {
             } else if (isEven) {
                 number = number / 2;
-            } else if (!isEven) {
-                number = (number * 3) + 1;
             } else {
-                System.out.println("Invalid Input");
+                number = (number * 3) + 1;
             }
             outputs.add(number);
-        }while(number != 1);
+        }while(!(number <= 1));
         //Converts the interger arrayList to an integer array
         int[] outputArray = outputs.stream().mapToInt(i -> i).toArray();
         return outputArray;
