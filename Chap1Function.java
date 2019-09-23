@@ -31,10 +31,11 @@ public class Chap1Function {
     // Evaluates the input as specified by the given algorithm
     public static int [] simpleMethod(int number){
         ArrayList<Integer> outputs = new ArrayList<>();
-
+        outputs.add(number);
+        
         do {
             boolean isEven;
-            // Checks if integer is even
+            // Checks if integer is even 
             if (number % 2 == 0) {
                 isEven = true;
             } else {
